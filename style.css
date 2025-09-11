@@ -1,0 +1,427 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: "Poppins", serif;
+
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 20px;
+}
+
+body:hover {
+    cursor: default;
+}
+
+button:hover {
+    cursor: pointer;
+    outline: 2px solid rgb(0, 0, 0);
+    scale: 1.03;
+}
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 2px;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    padding: 14px;
+    z-index: 3;
+    background-color: bisque;
+    margin: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#navbar h1 {
+    padding-right: 40px;
+    padding-left: 20px;
+    z-index: 2;
+}
+
+#links {
+    display: flex;
+    position: absolute;
+    right: 30px;
+    padding: 20px;
+    text-align: center;
+    column-gap: 15px;
+}
+
+#links a {
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+
+}
+
+#links a:hover {
+    color: rgb(137, 115, 115);
+    text-decoration: underline;
+}
+
+.toggle-icon {
+    z-index: 2;
+    margin-left: 10px;
+    display: none;
+
+}
+
+.toggle-icon:hover {
+    cursor: pointer;
+
+}
+
+#navbar .toggle-menu {
+    display: block;
+    position: fixed;
+    transition: 0.5s;
+    left: -50%;
+    top: 0px;
+    background-color: bisque;
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#navbar .toggle-menu i {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+}
+
+#navbar .toggle-menu .toggle-links {
+    padding-top: 40px;
+}
+
+#navbar .toggle-menu a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    color: black;
+}
+
+#navbar .toggle-menu a:hover {
+    color: rgb(137, 115, 115);
+    text-decoration: underline;
+}
+
+#navbar .toggle-menu i:hover {
+    cursor: pointer;
+} 
+
+
+.searchbar {
+    display: block;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.searchbar input {
+    display: inline-block;
+    width: 80%;
+    height: 25px;
+    padding: 10px;
+    outline: black 2px solid;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.searchbar input:focus {
+    font-size: 20px;
+}
+
+.searchbar #searchicon {
+    position: relative;
+    right: 50px;
+}
+
+.searchbar #searchicon:hover {
+    cursor: pointer;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    /*flex-basis: 100%;*/
+    width: 100%;
+    padding: 20px;
+    font-weight: 2px;
+    text-align: center;
+    justify-content: center;
+}
+
+.headertxt button {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(137, 115, 115);
+    color: #000;
+
+    border-radius: 10px;
+}
+
+.headertxt {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerimg img {
+    margin: 20px;
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.service {
+    display: flex;
+    margin: 20px;
+    flex-basis: 30%;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    gap: 45px;
+}
+
+.servicecontainer {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.servicecontainer div {
+    background-color: rosybrown;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*New arrivals*/
+
+.newarrivals {
+    padding: 10px;
+    margin-left: 20px;
+    gap: 45px;
+}
+
+.newimg {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.newimg div {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.newarrivals img {
+    width: 270px;
+    height: 270px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.newimg div button {
+    opacity: 0.9;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 5;
+    background-color: rgb(137, 115, 115);
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
+
+.newsletter {
+    justify-content: center;
+    text-align: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 5px;
+    outline: 3px solid black;
+}
+
+.newsletter button {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(137, 115, 115);
+    color: #000;
+    border-radius: 10px;
+}
+
+.footer {
+    padding: 20px;
+    background-color: rgb(215, 193, 166);
+}
+
+/*collections.html*/
+
+.collectionsearchbar {
+    display: block;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.collectionsearchbar input {
+    display: inline-block;
+    width: 80%;
+    height: 25px;
+    padding: 10px;
+    outline: black 2px solid;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.collectionsearchbar #searchicon {
+    position: relative;
+    right: 50px;
+}
+
+.collectionsearchbar #searchicon:hover {
+    cursor: pointer;
+}
+
+.collections {
+    padding: 20px;
+}
+
+.collections h1 {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.collection h3 {
+    text-align:center ;
+}
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    flex-basis: 10%;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 7px;
+    justify-self: center;
+}
+
+.collection img {
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+}
+
+.collection div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    width: fit-content;
+}
+
+/*contact.html*/
+
+.contact {
+    padding: 30px;
+    background-color: rgb(6, 6, 75);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-self: center;
+    color: white;
+    gap: 15px;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.contact input {
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.contact input:focus {
+    outline: none;
+}
+
+.contact textarea:focus {
+    outline: none;
+}
+
+.contact textarea {
+    position: relative;
+    border-radius: 5px;
+    max-width: 98%;
+    min-width: 98%;
+    height: 150px;
+    padding-left: 20px;
+    padding-top:20px;
+}
+
+.contact button {
+    width: 90px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(6, 6, 75);
+    border-radius: 10px;
+}
+
+
+/*Media Query*/
+@media screen and (max-width: 750px) {
+    #links {
+        display: none;
+    }
+
+    .toggle-icon {
+        display: block;
+    }
+
+    .servicecontainer {
+        flex-direction: column;
+    }
+
+}
