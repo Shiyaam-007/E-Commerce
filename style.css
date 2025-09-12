@@ -24,6 +24,10 @@ button:hover {
     scale: 1.03;
 }
 
+i{
+    padding:5px;
+}
+
 #navbar {
     display: flex;
     position: sticky;
@@ -423,5 +427,6 @@ button:hover {
     .servicecontainer {
         flex-direction: column;
     }
+
 
 }
